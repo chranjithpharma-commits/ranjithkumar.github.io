@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ranjith Kumar - Pharmaceutical Scientist with 12+ years of CMC Development, Analytical Methods, and Regulatory Compliance expertise">
+    <title>Ranjith Kumar | Pharmaceutical Scientist</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+        
+        /* Header/Navigation */
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+        
+        .nav-links a:hover {
+            opacity: 0.8;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 8rem 2rem 4rem;
+            text-align: center;
+            margin-top: 60px;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero .tagline {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 0.8rem 2rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            display: inline-block;
+        }
+        
+        .btn-primary {
+            background: white;
+            color: #1e3c72;
+        }
+        
+        .btn-primary:hover {
+            background: #f0f0f0;
+            transform: translateY(-2px);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+        
+        .btn-secondary:hover {
+            background: white;
+            color: #1e3c72;
+        }
+        
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        section {
+            padding: 4rem 0;
+        }
+        
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            color: #1e3c72;
+        }
+        
+        /* About Section */
+        .about-content {
+            background: white;
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 3rem;
+            align-items: start;
+        }
+        
+        .about-image {
+            text-align: center;
+        }
+        
+        .profile-pic {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #1e3c72;
+        }
+        
+        .about-text h3 {
+            color: #1e3c72;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        .about-text p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .stat-box {
+            text-align: center;
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #1e3c72;
+        }
+        
+        .stat-label {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        /* Expertise Section */
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .expertise-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .expertise-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .expertise-card h3 {
+            color: #1e3c72;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .expertise-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .expertise-card li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .expertise-card li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #1e3c72;
+            font-weight: bold;
+        }
+        
+        /* Experience Section */
+        .companies-showcase {
+            background: white;
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+        
+        .companies-showcase h3 {
+            color: #1e3c72;
+            margin-bottom: 2rem;
+            font-size: 1.5rem;
+        }
+        
+        .company-logos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            align-items: center;
+            justify-items: center;
+        }
+        
+        .company-logo-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 1rem;
+            transition: transform 0.3s;
+        }
+        
+        .company-logo-item:hover {
+            transform: scale(1.05);
+        }
+        
+        .company-logo-large {
+            width: 120px;
+            height: 80px;
+            object-fit: contain;
+            filter: grayscale(100%);
+            transition: filter 0.3s;
+        }
+        
+        .company-logo-item:hover .company-logo-large {
+            filter: grayscale(0%);
+        }
+        
+        .company-logo-item span {
+            font-size: 0.85rem;
+            color: #666;
+            text-align: center;
+        }
+        
+        .timeline {
+            position: relative;
+            padding-left: 2rem;
+        }
+        
+        .timeline:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: #1e3c72;
+        }
+        
+        .timeline-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            margin-left: 2rem;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        
+        .timeline-item:before {
+            content: '';
+            position: absolute;
+            left: -2.6rem;
+            top: 2rem;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: #1e3c72;
+            border: 3px solid white;
+        }
+        
+        .timeline-item h3 {
+            color: #1e3c72;
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .timeline-item .company {
+            font-weight: 600;
+            color: #666;
+            margin-bottom: 0.3rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .company-logo {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+        }
+        
+        .timeline-item .duration {
+            color: #999;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        
+        .timeline-item ul {
+            margin-left: 1.5rem;
+        }
+        
+        .timeline-item li {
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Skills Section */
+        .skills-container {
+            background: white;
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .skill-category h3 {
+            color: #1e3c72;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+        
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        
+        .skill-tag {
+            background: #e8f0fe;
+            color: #1e3c72;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        /* Contact Section */
+        .contact-content {
+            background: white;
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+        
+        .contact-item {
+            text-align: center;
+        }
+        
+        .contact-icon {
+            font-size: 2rem;
+            color: #1e3c72;
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-item a {
+            color: #1e3c72;
+            text-decoration: none;
+        }
+        
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Footer */
+        footer {
+            background: #1e3c72;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 1rem;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats {
+                grid-template-columns: 1fr;
+            }
+            
+            .timeline-item {
+                margin-left: 1rem;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+        }
+        
+        /* Print Styles */
+        @media print {
+            header, footer, .cta-buttons {
+                display: none;
+            }
+            
+            section {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header>
+        <nav>
+            <div class="logo">Ranjith Kumar</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Ranjith Kumar</h1>
+            <p class="tagline">Pharmaceutical Scientist | 12+ Years | CMC Development • Analytical Methods • Regulatory Compliance</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                <a href="https://www.linkedin.com/in/ranjith-kumar-a7652a77" target="_blank" class="btn btn-secondary">View LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-grid">
+                    <div class="about-image">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Crect width='200' height='200' fill='%231e3c72'/%3E%3Ctext x='50%25' y='50%25' font-size='60' fill='white' text-anchor='middle' dy='.3em'%3ERK%3C/text%3E%3C/svg%3E" alt="Ranjith Kumar" class="profile-pic">
+                        <p style="margin-top: 1rem; color: #666; font-size: 0.9rem;">Replace with your photo</p>
+                    </div>
+                    <div class="about-text">
+                        <h3>Pharmaceutical Scientist | CMC Development Expert</h3>
+                        <p>Results-driven pharmaceutical scientist with over 12 years of experience transforming complex CMC analytical challenges into regulatory-compliant solutions for global markets. Expertise spans analytical method development, quality systems, and regulatory strategy.</p>
+                        <p>Recently established a complete R&D laboratory from ground up, managing $2.5M CAPEX and $200K OPEX budgets while maintaining 100% cGMP compliance.</p>
+                        <p>Proven track record in supporting 505(b)(2) regulatory submissions, developing HPLC/UPLC/LC-MS/MS methods, and leading cross-functional teams across international markets including China, FDA, and EMA jurisdictions.</p>
+                    </div>
+                </div>
+                
+                <div class="stats">
+                    <div class="stat-box">
+                        <div class="stat-number">12+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">$2.5M</div>
+                        <div class="stat-label">Budget Managed</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">cGMP Compliance</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise">
+        <div class="container">
+            <h2 class="section-title">Core Expertise</h2>
+            <div class="expertise-grid">
+                <div class="expertise-card">
+                    <h3>CMC Development</h3>
+                    <ul>
+                        <li>Method development & validation</li>
+                        <li>Specifications & impurity profiling</li>
+                        <li>Stability programs (ICH guidelines)</li>
+                        <li>Drug product characterization</li>
+                        <li>Technology transfer</li>
+                    </ul>
+                </div>
+                
+                <div class="expertise-card">
+                    <h3>Analytical Technologies</h3>
+                    <ul>
+                        <li>HPLC/UPLC</li>
+                        <li>GCMS & LC-MS/MS</li>
+                        <li>Mass Spectrometry</li>
+                        <li>XRD, DSC, IR Spectroscopy</li>
+                        <li>Dissolution & Rheometry</li>
+                    </ul>
+                </div>
+                
+                <div class="expertise-card">
+                    <h3>Regulatory Excellence</h3>
+                    <ul>
+                        <li>CTD/eCTD documentation</li>
+                        <li>FDA/ICH/USP compliance</li>
+                        <li>505(b)(2) pathways</li>
+                        <li>Health authority responses</li>
+                        <li>Global regulatory submissions</li>
+                    </ul>
+                </div>
+                
+                <div class="expertise-card">
+                    <h3>Quality Systems</h3>
+                    <ul>
+                        <li>cGMP/GxP compliance</li>
+                        <li>CAPA & deviation management</li>
+                        <li>OOS/OOT investigations</li>
+                        <li>Product Quality Reviews (PQR)</li>
+                        <li>Right-first-time culture</li>
+                    </ul>
+                </div>
+                
+                <div class="expertise-card">
+                    <h3>Laboratory Leadership</h3>
+                    <ul>
+                        <li>$2.5M+ budget management</li>
+                        <li>IQ/OQ/PQ execution</li>
+                        <li>CRO coordination</li>
+                        <li>Team leadership</li>
+                        <li>Cross-functional collaboration</li>
+                    </ul>
+                </div>
+                
+                <div class="expertise-card">
+                    <h3>Product Development</h3>
+                    <ul>
+                        <li>Small molecules</li>
+                        <li>Oncology/non-oncology formulations</li>
+                        <li>Generic pharmaceuticals</li>
+                        <li>International markets (China, FDA, EMA)</li>
+                        <li>Lifecycle management</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            
+            <!-- Companies Showcase -->
+            <div class="companies-showcase">
+                <h3>Companies I've Worked With</h3>
+                <div class="company-logos-grid">
+                    <div class="company-logo-item">
+                        <img src="https://logo.clearbit.com/lotuspharm.com" alt="Lotus Pharmaceutical" class="company-logo-large" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27120%27 height=%2780%27%3E%3Crect width=%27120%27 height=%2780%27 fill=%27%23e0e0e0%27/%3E%3Ctext x=%2750%25%27 y=%2750%25%27 font-size=%2712%27 fill=%27%23666%27 text-anchor=%27middle%27 dy=%27.3em%27%3ELotus Pharma%3C/text%3E%3C/svg%3E'">
+                        <span>Lotus Pharmaceutical</span>
+                    </div>
+                    <div class="company-logo-item">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Dr._Reddy%27s_Laboratories_logo.svg/320px-Dr._Reddy%27s_Laboratories_logo.svg.png" alt="Dr. Reddy's" class="company-logo-large" onerror="this.src='https://logo.clearbit.com/drreddys.com'">
+                        <span>Dr. Reddy's Laboratories</span>
+                    </div>
+                    <div class="company-logo-item">
+                        <img src="https://logo.clearbit.com/alembicpharmaceuticals.com" alt="Alembic" class="company-logo-large" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27120%27 height=%2780%27%3E%3Crect width=%27120%27 height=%2780%27 fill=%27%23e0e0e0%27/%3E%3Ctext x=%2750%25%27 y=%2750%25%27 font-size=%2712%27 fill=%27%23666%27 text-anchor=%27middle%27 dy=%27.3em%27%3EAlembic%3C/text%3E%3C/svg%3E'">
+                        <span>Alembic Pharmaceuticals</span>
+                    </div>
+                    <div class="company-logo-item">
+                        <img src="https://logo.clearbit.com/aizantdrug.com" alt="Aizant" class="company-logo-large" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27120%27 height=%2780%27%3E%3Crect width=%27120%27 height=%2780%27 fill=%27%23e0e0e0%27/%3E%3Ctext x=%2750%25%27 y=%2750%25%27 font-size=%2712%27 fill=%27%23666%27 text-anchor=%27middle%27 dy=%27.3em%27%3EAizant%3C/text%3E%3C/svg%3E'">
+                        <span>Aizant Drug Research</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Scientist</h3>
+                    <div class="company">
+                        <img src="https://logo.clearbit.com/lotuspharm.com" alt="Lotus Pharmaceutical" class="company-logo" onerror="this.style.display='none'">
+                        Lotus Pharmaceutical Co., Ltd
+                    </div>
+                    <div class="duration">August 2024 - Present | Hyderabad, India</div>
+                    <ul>
+                        <li>Established complete R&D laboratory managing $2.5M CAPEX and $200K OPEX budgets</li>
+                        <li>Led IQ/OQ/PQ execution achieving 100% cGMP/GxP compliance</li>
+                        <li>Performed solid-state characterization using XRD, DSC, Hot Stage Microscopy, Rheometry</li>
+                        <li>Executed product development using HPLC/UPLC, GCMS, LC-MS/MS for small molecules</li>
+                        <li>Managed stability tracking per ICH Q1A guidelines across multiple zones</li>
+                    </ul>
+                </div>
+                
+                <div class="timeline-item">
+                    <h3>Scientist</h3>
+                    <div class="company">
+                        <img src="https://logo.clearbit.com/lotuspharm.com" alt="Lotus Pharmaceutical" class="company-logo" onerror="this.style.display='none'">
+                        Lotus Pharmaceutical Co., Ltd
+                    </div>
+                    <div class="duration">November 2023 - August 2024 | Taiwan</div>
+                    <ul>
+                        <li>Spearheaded 505(b)(2) CMC development projects with complete stability planning</li>
+                        <li>Authored CMC technical documents in CTD/eCTD format for FDA submissions</li>
+                        <li>Coordinated CMC validation activities at CROs and in-house cGMP laboratories</li>
+                        <li>Generated Product Quality Reviews (PQRs) ensuring lifecycle management</li>
+                        <li>Implemented QUMAS documentation for analytical methods</li>
+                    </ul>
+                </div>
+                
+                <div class="timeline-item">
+                    <h3>Scientist</h3>
+                    <div class="company">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Dr._Reddy%27s_Laboratories_logo.svg/320px-Dr._Reddy%27s_Laboratories_logo.svg.png" alt="Dr. Reddy's Laboratories" class="company-logo" onerror="this.src='https://logo.clearbit.com/drreddys.com'">
+                        Dr. Reddy's Laboratories
+                    </div>
+                    <div class="duration">December 2021 - November 2023 | India</div>
+                    <ul>
+                        <li>Developed CMC packages for China NMPA regulatory requirements</li>
+                        <li>Performed impurity profiling using mass spectrometry for drug products</li>
+                        <li>Developed USP-compliant GC methods for residual solvents (USP &lt;467&gt;)</li>
+                        <li>Characterized impurities using LC-MS/MS techniques</li>
+                        <li>Supported regulatory submissions across FDA, EMA, NMPA, TGA</li>
+                    </ul>
+                </div>
+                
+                <div class="timeline-item">
+                    <h3>Research Scientist</h3>
+                    <div class="company">
+                        <img src="https://logo.clearbit.com/alembicpharmaceuticals.com" alt="Alembic Pharmaceuticals" class="company-logo" onerror="this.style.display='none'">
+                        Alembic Pharmaceuticals Limited
+                    </div>
+                    <div class="duration">May 2017 - December 2021 | Hyderabad, India</div>
+                    <ul>
+                        <li>Developed analytical methods for oncology and non-oncology products per ICH Q2(R1)</li>
+                        <li>Addressed USFDA deficiency queries with comprehensive CMC responses</li>
+                        <li>Managed CAPA system with systematic root cause analysis</li>
+                        <li>Conducted in-vitro bioequivalence studies for specialty dosage forms</li>
+                        <li>Maintained zero critical observations during regulatory inspections</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>CMC & Regulatory</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">CMC Development</span>
+                            <span class="skill-tag">505(b)(2)</span>
+                            <span class="skill-tag">CTD/eCTD</span>
+                            <span class="skill-tag">FDA Compliance</span>
+                            <span class="skill-tag">ICH Guidelines</span>
+                            <span class="skill-tag">USP Standards</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Analytical Techniques</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">HPLC/UPLC</span>
+                            <span class="skill-tag">GCMS</span>
+                            <span class="skill-tag">LC-MS/MS</span>
+                            <span class="skill-tag">Mass Spectrometry</span>
+                            <span class="skill-tag">XRD</span>
+                            <span class="skill-tag">DSC</span>
+                            <span class="skill-tag">IR Spectroscopy</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Quality Systems</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">cGMP/GxP</span>
+                            <span class="skill-tag">CAPA</span>
+                            <span class="skill-tag">OOS/OOT</span>
+                            <span class="skill-tag">PQR</span>
+                            <span class="skill-tag">QUMAS</span>
+                            <span class="skill-tag">IQ/OQ/PQ</span>
+                        </div>
+                    </div>
+                    
+                    <div class="skill-category">
+                        <h3>Leadership & Management</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Budget Management</span>
+                            <span class="skill-tag">CRO Coordination</span>
+                            <span class="skill-tag">Team Leadership</span>
+                            <span class="skill-tag">Project Management</span>
+                            <span class="skill-tag">Cross-functional Collaboration</span>
+                        </div
